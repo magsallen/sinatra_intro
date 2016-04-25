@@ -1,3 +1,5 @@
-<h1>My name is <%= @cat_name %></h1>
+<% if @cat_name %>
+<h1>My name is <%= @cat_name %><% if @age %> and I am <%= @age %><% end %></h1>
+<% end %>
 
 <img src='http://bit.ly/1eze8aE' style='border-style:dashed;border-color:red;'/>
