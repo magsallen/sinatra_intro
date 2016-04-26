@@ -1,3 +1,9 @@
+<% if !@cat_name %>
+<form action= "/named-cat" >
+  <input type="text" name="name"/>
+  <input type="submit" value="Pengwing">
+</form> <% end %>
+
 <% if @cat_name %>
 <h1>My name is <%= @cat_name %><% if @age %> and I am <%= @age %><% end %></h1>
 <% end %>
